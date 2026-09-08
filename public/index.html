@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClinixAI QMS</title>
+<style>
+  :root {
+    --ink: #12211f;
+    --paper: #f6f4ee;
+    --panel: #ffffff;
+    --line: #d8d4c8;
+    --amber: #a8621a;
+    --amber-soft: #f5e9dc;
+    --muted: #5b6663;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 56px 28px 80px; }
+  header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid var(--line); padding-bottom: 22px; margin-bottom: 40px;
+  }
+  .mark { font-size: 1.05rem; font-weight: 600; }
+  .mark span { color: var(--amber); }
+  .back {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.8rem; color: var(--muted); text-decoration: none;
+  }
+  h1 { font-size: 2rem; font-weight: 500; margin: 0 0 10px; max-width: 22ch; }
+  .lede {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--muted); font-size: 0.96rem; max-width: 58ch; margin: 0 0 44px;
+  }
+  .section { margin-bottom: 40px; }
+  .section h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--amber); margin: 0 0 14px; font-weight: 600;
+  }
+  .doc-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 12px 0; border-bottom: 1px dashed var(--line);
+  }
+  .doc-row:last-child { border-bottom: none; }
+  .doc-row a {
+    color: var(--ink); text-decoration: none; font-size: 1rem;
+  }
+  .doc-row a:hover { color: var(--amber); }
+  .doc-row .meta {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.76rem; color: var(--muted);
+  }
+  .empty {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.86rem; color: var(--muted); font-style: normal;
+    padding: 14px 0;
+  }
+  footer {
+    margin-top: 48px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.76rem; color: var(--muted);
+  }
+  footer a { color: var(--amber); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark">Clinix<span>AI</span> — QMS</div>
+      <a class="back" href="https://staff.theclinixai.com">&larr; staff workspace</a>
+    </header>
+
+    <h1>Controlled documents &amp; training.</h1>
+    <p class="lede">
+      Read-only view of approved SOPs and required training. Changes only
+      enter here through a reviewed pull request in the repository.
+    </p>
+
+    <div class="section">
+      <h2>Standard Operating Procedures</h2>
+      <div class="doc-row">
+        <a href="https://github.com/madhupadishala/QMS_Theclinixai/blob/main/docs/sop/SOP-000-template.md" target="_blank" rel="noopener">SOP-000 — Template</a>
+        <span class="meta">v1.0 &middot; reference only</span>
+      </div>
+      <p class="empty">Approved SOPs will be listed here as they're added.</p>
+    </div>
+
+    <div class="section">
+      <h2>Required Training</h2>
+      <div class="doc-row">
+        <a href="https://github.com/madhupadishala/QMS_Theclinixai/blob/main/training/README.md" target="_blank" rel="noopener">Training &amp; read-and-understand tracker</a>
+        <span class="meta">open</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Quality Records</h2>
+      <p class="empty">No approved quality records published yet.</p>
+    </div>
+
+    <footer>
+      This is a read-only mirror. The repository is the system of record —
+      <a href="https://github.com/madhupadishala/QMS_Theclinixai" target="_blank" rel="noopener">view it on GitHub</a>.
+    </footer>
+  </div>
+</body>
+</html>
